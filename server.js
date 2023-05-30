@@ -9,6 +9,7 @@ const host = config.host;
 const apiKey = config.apiKey;
 
 console.log("PORT", port);
+
 app.get("/", (req, res) => {
     res.send(
         `To get to the test site <a href="https://be-13-env-mrbubbles-src-render-test.onrender.com/halloIchBinEinApiKey">CLICK ME</a>`
@@ -19,5 +20,8 @@ app.get(`/${apiKey}`, (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server available at http://${host}:${port}/${apiKey}`);
+    console.log(`Server root is locally available at http://${host}:${port}`);
+    console.log(
+        `Server page '${apiKey}' is locally available at http://${host}:${port}/${apiKey}`
+    );
 });
