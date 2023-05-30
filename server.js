@@ -10,18 +10,9 @@ const apiKey = config.apiKey;
 
 console.log("PORT", port);
 app.get("/", (req, res) => {
-    // let link = document.createElement("a");
-    // a.setAttribute(
-    // "href",
-    // "https://be-13-env-mrbubbles-src-render-test.onrender.com/halloIchBinEinApiKey"
-    // );
-    // a.innerHTML = "Click me";
-    // document.body.appendChild(a);
     res.send(
-        `To get to the test site <a href="https://be-13-env-mrbubbles-src-render-test.onrender.com/halloIchBinEinApiKey">Click Me</a>`
+        `To get to the test site <a href="https://be-13-env-mrbubbles-src-render-test.onrender.com/halloIchBinEinApiKey">CLICK ME</a>`
     );
-
-    // res.send(`You can finde the test site ${link}`);
 });
 app.get(`/${apiKey}`, (req, res) => {
     res.send("Hi Api Key");
