@@ -9,7 +9,11 @@ const host = config.host;
 const apiKey = config.apiKey;
 
 console.log("PORT", port);
-
+app.get("/", (req, res) => {
+    res.send(
+        "You can finde the test site @ https://be-13-env-mrbubbles-src-render-test.onrender.com/halloIchBinEinApiKey"
+    );
+});
 app.get(`/${apiKey}`, (req, res) => {
     res.send("Hi Api Key");
 });
