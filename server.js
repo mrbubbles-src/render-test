@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
     // a.innerHTML = "Click me";
     // document.body.appendChild(a);
     res.send(
-        `You can finde the test site <a href="https://be-13-env-mrbubbles-src-render-test.onrender.com/halloIchBinEinApiKey">Click Me</a>`
+        `To get to the test site <a href="https://be-13-env-mrbubbles-src-render-test.onrender.com/halloIchBinEinApiKey">Click Me</a>`
     );
 
     // res.send(`You can finde the test site ${link}`);
